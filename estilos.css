@@ -1,6 +1,4 @@
-* {
-    
-}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -12,7 +10,6 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #E5E5E5;
-
 }
 .fundo-finalizar-pedido {
     opacity: 0.1;
@@ -219,5 +216,3 @@ ion-icon {
     line-height: 23px;
     letter-spacing: 0.018em;
 }
-
-
