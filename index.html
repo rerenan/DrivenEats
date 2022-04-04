@@ -27,28 +27,28 @@
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarPrato(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarPrato(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarPrato(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -60,28 +60,28 @@
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Coquinha</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>4,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarBebida(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarBebida(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarBebida(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                            <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -93,38 +93,61 @@
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Picolé</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                        <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarSobremesa(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                        <p>R$ <span>54,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="opcao" onclick="selecionarSobremesa(this)">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                        <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <div class="opcao" onclick="selecionarSobremesa(this)" onclick="finalizarPedido()">
                         <img src="/imgs/Marmitex.jpg">
                         <h3>Marmitex</h3>
                         <h4 class="descricao">Um pouco de batata, um pouco de salada</h4>
-                            <p>R$ 14,90</p>
+                        <p>R$ <span>14,90</span></p>
                             <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
         </div>
         <div class="buttonbox">
-            <button>Selecione os 3 itens para fechar o pedido</button>
+            <button class= "nao-finalizar-pedido"onclick="finalizarPedido()">Selecione os 3 itens para fechar o pedido</button>
         </div>
-
-
+    </div>
+    <div class="box-final escondido">
+        <div class="tela-final">
+            <h3>Confirme seu pedido</h1>
+            <div class="prato-final">
+                <h4>prato</h4>
+                <h4 class="preco-prato">0,00</h4>
+            </div>
+            <div class="bebida-final">
+                <h4>bebida</h4>
+                <h4 class="preco-bebida">0,00</h4>
+            </div>
+            <div class="sobremesa-final">
+                <h4>sobremesa</h4>
+                <h4 class="preco-sobremesa">0,00</h4>
+            </div>
+            <div class="total">
+                <h3>TOTAL</h3>
+                <h3 >R$ <span class="preco-total"></span></h3>
+            </div>
+            <div class="button-final">
+                <button class="botao-final" onclick="enviarPedido()">Tudo certo, pode pedir!</button>
+                <button class="botao-cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+        </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>

@@ -2,13 +2,20 @@
     
 }
 body {
-    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     font-family: 'Righteous', cursive;
 }
 .geral {
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+
+}
+.fundo-finalizar-pedido {
+    opacity: 0.1;
 }
 img {
     width: 144px;
@@ -42,7 +49,7 @@ img {
     line-height: 21px;
 }
 .conteudo {
-    margin-top: 123px;
+    margin-top: 98px;
     padding-left: 19px;
     margin-bottom: 98px;
 }
@@ -94,24 +101,34 @@ img {
     border:  white solid 5px;
     position: relative;
 }
-.buttonbox {
+.preco {
     display: flex;
+}
+.buttonbox {
+    width: 100%;
+    display:flex ;
     justify-content: center;
     background-color: white;
-    padding: 15px 25px;
+    padding: 15px 0px;
     position: fixed;
     bottom: 0px;
     left: 0px;
 }
-button {
-    background-color: #CBCBCB;
+.buttonbox button {
+    width: 90%;
     color: white;
     font-size: 16px;
     border-radius: 50px;
     border: none;
-    text-align: center;
     text-decoration: none;
-    padding: 8px 85px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.nao-finalizar-pedido {
+    background-color: #CBCBCB;
 }
 .selecionado {
     border: #32B72F solid 5px;
@@ -130,6 +147,75 @@ ion-icon {
 }
 .fechar-pedido {
     background-color: #32B72F;
+    font-size: 23px;
+    margin: 0px 2px;
+}
+.escondido {
+    display: none;
+}
+.tela-final {
+    width: 90%;
+    height: 44%;
+    background-color: #50D074;
+    padding: 0px 25px;
+    padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 2;
+    top:28%;
+    right:5%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+.tela-final h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tela-final h4 {
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+}
+.tela-final div {
+    display: flex;
+    justify-content: space-between;
+}
+.button-final {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.botao-final {
+    background-color: white;
+    color: #50D074;
+    width: 300px;
+    border: none;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    border-radius: 50px
+}
+.botao-cancelar{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.018em;
 }
 
 
